@@ -4,6 +4,7 @@ import styled from 'styled-components';
 // Components
 import MyHeader from "./components/MyHeader";
 import MyNav from './components/MyNav';
+import SearchBar from './components/SearchBar';
 
 // Pages
 // Pages go here!
@@ -16,6 +17,7 @@ export default function App() {
     <AppContainer>
       <MyHeader />
       <MyNav />
+      <SearchBar />
     </AppContainer>
   );
 }

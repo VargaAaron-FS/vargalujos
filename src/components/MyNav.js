@@ -21,7 +21,7 @@ const NavContainer = styled.nav`
   flex-direction: row;
   justify-content: center;
   max-width: 100%;
-  background: #eee;
+  background: #E7E7E7;
   padding: 1rem;
   border-radius: 0 0 .25rem .25rem;
   font-size: 1rem;
@@ -31,7 +31,7 @@ const NavContainer = styled.nav`
 const Link = styled.a`
   display: flex;
   flex-direction: row;
-  color: #000;
+  color: #151515;
   align-items: center;
   &:hover {
     text-decoration: none;
