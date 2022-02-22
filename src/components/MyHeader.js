@@ -7,7 +7,9 @@ import MyLogo from "./MyLogo";
 export default function MyHeader() {
   return (
     <HeaderContainer>
-      <MyLogo />
+      <h1>
+        <MyLogo />
+      </h1>
     </HeaderContainer>
   );
 }

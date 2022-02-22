@@ -20,7 +20,6 @@ const NavContainer = styled.nav`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  max-width: 100%;
   background: #E7E7E7;
   padding: 1rem;
   border-radius: 0 0 .25rem .25rem;
