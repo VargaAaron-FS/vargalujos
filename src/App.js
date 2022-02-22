@@ -23,7 +23,5 @@ export default function App() {
 const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 768px;
-  margin: auto;
   padding: 1rem;
 `;

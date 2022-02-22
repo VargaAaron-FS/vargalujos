@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import {  } from "react-icons/ri";
 
-import VargaLujosLogo from "../images/vl-logo-header@2x.png";
+import VargaLujosLogo from "../images/logo.svg";
 
 export default function MyHeader() {
   return (
@@ -22,7 +22,7 @@ const HeaderContainer = styled.header`
 `;
 
 const LogoImg = styled.img`
-  height: 50px;
+  height: 100px;
   margin: auto;
   padding: 1rem;
 `;
