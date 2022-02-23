@@ -36,6 +36,7 @@ const TintCover = styled.div`
   padding: 1rem;
   cursor: pointer;
   aspect-ratio: 1/1;
+  width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
