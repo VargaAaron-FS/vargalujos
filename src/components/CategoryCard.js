@@ -2,7 +2,7 @@ import React, {  } from "react";
 // import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export default function MyHeader(props) {
+export default function CategoryCard(props) {
   return (
     <CategoryCardContainer style={{ backgroundImage: `url(${props.bgImgUrl})` }}>
       <TintCover>

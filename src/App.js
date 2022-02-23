@@ -6,12 +6,15 @@ import MyHeader from "./components/MyHeader";
 import MyNav from './components/MyNav';
 import SearchBar from './components/SearchBar';
 import CategoryCard from "./components/CategoryCard";
+import CategoryCardLong from './components/CategoryCardLong';
+import SectionTitle from './components/SectionTitle';
 
 // Photos
 import CigarPhoto from "./images/cigar-photo.jpg";
 import WinesPhoto from "./images/wines-photo.jpg";
 import CoffeePhoto from "./images/coffee-photo.jpg";
 import RecipesPhoto from "./images/recipes-photo.jpg";
+import AccessoriesPhoto from "./images/accessories-photo.jpg";
 
 // Pages
 // Pages go here!
@@ -26,12 +29,14 @@ export default function App() {
       <MyNav />
       <SearchBar />
       <Grid>
-        {/* TODO: Make these grids 1:1 ratio */}
+        {/* TODO: Make grid responsive and change to certain breakpoints */}
         <CategoryCard categoryTitle="Cigars" bgImgUrl={CigarPhoto} />
         <CategoryCard categoryTitle="Wines" bgImgUrl={WinesPhoto} />
         <CategoryCard categoryTitle="Coffee" bgImgUrl={CoffeePhoto} />
         <CategoryCard categoryTitle="Recipes" bgImgUrl={RecipesPhoto} />
       </Grid>
+      <CategoryCardLong categoryTitle="Accessories" bgImgUrl={AccessoriesPhoto} />
+      <SectionTitle sectionTitle="Featured Cigars" />
     </AppContainer>
   );
 }

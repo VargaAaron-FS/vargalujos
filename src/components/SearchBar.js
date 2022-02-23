@@ -27,4 +27,5 @@ const Input = styled.input`
   font-size: 1rem;
   color: #151515;
   width: 100%;
+  font-family: 'Arial', sans-serif;
 `;
