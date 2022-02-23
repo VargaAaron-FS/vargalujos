@@ -20,4 +20,7 @@ const FooterContainer = styled.footer`
   background: #151515;
   border-radius: 0 0 .25rem .25rem;
   justify-content: center;
+  @media (max-width: 768px) {
+    border-radius: 0 0 47.33px 47.33px;
+  }
 `;
