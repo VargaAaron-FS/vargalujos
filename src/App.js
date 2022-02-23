@@ -18,6 +18,10 @@ import CoffeePhoto from "./images/coffee-photo.jpg";
 import RecipesPhoto from "./images/recipes-photo.jpg";
 import AccessoriesPhoto from "./images/accessories-photo.jpg";
 import CigarItemSamplePhoto from "./images/cigar-item-sample.png";
+import WineItemSamplePhoto from "./images/wine-item-sample.jpg";
+import CoffeeItemSamplePhoto from "./images/coffee-item-sample.jpg";
+import RecipesItemSamplePhoto from "./images/recipes-item-sample.jpg";
+import AccessoriesItemSamplePhoto from "./images/accessories-item-sample.jpg";
 
 // Pages
 // Pages go here!
@@ -44,9 +48,9 @@ export default function App() {
       />
       <SectionTitle sectionTitle="Featured Cigars" />
       <FeaturedProductsGrid
-        productOneDescription="Product Description"
-        productTwoDescription="Product Description"
-        productThreeDescription="Product Description"
+        productOneTitle="Product Title"
+        productTwoTitle="Product Title"
+        productThreeTitle="Product Title"
         prodOnePrice="$10.00"
         prodTwoPrice="$20.00"
         prodThreePrice="$30.00"
@@ -54,33 +58,33 @@ export default function App() {
         itemTwoImgUrl={CigarItemSamplePhoto}
         itemThreeImgUrl={CigarItemSamplePhoto}
       />
-      <PrimaryButton buttonTitle="View All" />
+      <PrimaryButton buttonTitle="Shop All" />
       <SectionTitle sectionTitle="Featured Wines" />
       <FeaturedProductsGrid
-        productOneDescription="Product Description"
-        productTwoDescription="Product Description"
-        productThreeDescription="Product Description"
+        productOneTitle="Product Title"
+        productTwoTitle="Product Title"
+        productThreeTitle="Product Title"
         prodOnePrice="$10.00"
         prodTwoPrice="$20.00"
         prodThreePrice="$30.00"
-        itemOneImgUrl={CigarItemSamplePhoto}
-        itemTwoImgUrl={CigarItemSamplePhoto}
-        itemThreeImgUrl={CigarItemSamplePhoto}
+        itemOneImgUrl={WineItemSamplePhoto}
+        itemTwoImgUrl={WineItemSamplePhoto}
+        itemThreeImgUrl={WineItemSamplePhoto}
       />
-      <PrimaryButton buttonTitle="View All" />
+      <PrimaryButton buttonTitle="Shop All" />
       <SectionTitle sectionTitle="Featured Coffee" />
       <FeaturedProductsGrid
-        productOneDescription="Product Description"
-        productTwoDescription="Product Description"
-        productThreeDescription="Product Description"
+        productOneTitle="Product Title"
+        productTwoTitle="Product Title"
+        productThreeTitle="Product Title"
         prodOnePrice="$10.00"
         prodTwoPrice="$20.00"
         prodThreePrice="$30.00"
-        itemOneImgUrl={CigarItemSamplePhoto}
-        itemTwoImgUrl={CigarItemSamplePhoto}
-        itemThreeImgUrl={CigarItemSamplePhoto}
+        itemOneImgUrl={CoffeeItemSamplePhoto}
+        itemTwoImgUrl={CoffeeItemSamplePhoto}
+        itemThreeImgUrl={CoffeeItemSamplePhoto}
       />
-      <PrimaryButton buttonTitle="View All" />
+      <PrimaryButton buttonTitle="Shop All" />
       <SectionTitle sectionTitle="Featured Recipes" />
       <FeaturedProductsGrid
         productOneDescription="Product Description"
@@ -89,24 +93,24 @@ export default function App() {
         prodOnePrice="$10.00"
         prodTwoPrice="$20.00"
         prodThreePrice="$30.00"
-        itemOneImgUrl={CigarItemSamplePhoto}
-        itemTwoImgUrl={CigarItemSamplePhoto}
-        itemThreeImgUrl={CigarItemSamplePhoto}
+        itemOneImgUrl={RecipesItemSamplePhoto}
+        itemTwoImgUrl={RecipesItemSamplePhoto}
+        itemThreeImgUrl={RecipesItemSamplePhoto}
       />
-      <PrimaryButton buttonTitle="View All" />
+      <PrimaryButton buttonTitle="Shop All" />
       <SectionTitle sectionTitle="Featured Accessories" />
       <FeaturedProductsGrid
-        productOneDescription="Product Description"
-        productTwoDescription="Product Description"
-        productThreeDescription="Product Description"
+        productOneTitle="Product Title"
+        productTwoTitle="Product Title"
+        productThreeTitle="Product Title"
         prodOnePrice="$10.00"
         prodTwoPrice="$20.00"
         prodThreePrice="$30.00"
-        itemOneImgUrl={CigarItemSamplePhoto}
-        itemTwoImgUrl={CigarItemSamplePhoto}
-        itemThreeImgUrl={CigarItemSamplePhoto}
+        itemOneImgUrl={AccessoriesItemSamplePhoto}
+        itemTwoImgUrl={AccessoriesItemSamplePhoto}
+        itemThreeImgUrl={AccessoriesItemSamplePhoto}
       />
-      <PrimaryButton buttonTitle="View All" />
+      <PrimaryButton buttonTitle="Shop All" />
     </AppContainer>
   );
 }

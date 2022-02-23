@@ -7,17 +7,17 @@ export default function FeaturedProductsGrid(props) {
     <FeaturedProductsGridContainer>
       <GridItem>
         <ItemImage src={props.itemOneImgUrl} />
-        <Description>{props.productOneDescription}</Description>
+        <ProductTitle>{props.productOneTitle}</ProductTitle>
         <Price>{props.prodOnePrice}</Price>
       </GridItem>
       <GridItem>
         <ItemImage src={props.itemTwoImgUrl} />
-        <Description>{props.productTwoDescription}</Description>
+        <ProductTitle>{props.productTwoTitle}</ProductTitle>
         <Price>{props.prodTwoPrice}</Price>
       </GridItem>
       <GridItem>
         <ItemImage src={props.itemThreeImgUrl} />
-        <Description>{props.productThreeDescription}</Description>
+        <ProductTitle>{props.productThreeTitle}</ProductTitle>
         <Price>{props.prodThreePrice}</Price>
       </GridItem>
     </FeaturedProductsGridContainer>
@@ -43,7 +43,7 @@ const GridItem = styled.div`
   cursor: pointer;
 `;
 
-const Description = styled.p`
+const ProductTitle = styled.p`
   margin: 0;
   margin-top: 1rem;
 `;
