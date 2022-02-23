@@ -26,6 +26,13 @@ const CategoryCardContainer = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   margin-top: 1rem;
+  @media (max-width: 640px) {
+    aspect-ratio: 1/1;
+  }
+  @media (min-width: 1280px) {
+    aspect-ratio: 4/1;
+    margin-top: 0rem;
+  }
 `;
 
 const TintCover = styled.div`

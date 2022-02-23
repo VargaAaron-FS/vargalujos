@@ -30,6 +30,10 @@ const FeaturedProductsGridContainer = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto;
   column-gap: 1rem;
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
 `;
 
 const GridItem = styled.div`

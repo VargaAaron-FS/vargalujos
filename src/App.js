@@ -87,9 +87,9 @@ export default function App() {
       <PrimaryButton buttonTitle="Shop All" />
       <SectionTitle sectionTitle="Featured Recipes" />
       <FeaturedProductsGrid
-        productOneDescription="Product Description"
-        productTwoDescription="Product Description"
-        productThreeDescription="Product Description"
+        productOneTitle="Product Description"
+        productTwoTitle="Product Description"
+        productThreeTitle="Product Description"
         prodOnePrice="$10.00"
         prodTwoPrice="$20.00"
         prodThreePrice="$30.00"
@@ -128,4 +128,10 @@ const Grid = styled.div`
   grid-template-rows: auto auto;
   gap: 1rem;
   margin-top: 1rem;
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 1280px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 `;
