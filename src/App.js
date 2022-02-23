@@ -10,6 +10,8 @@ import CategoryCardLong from "./components/CategoryCardLong";
 import SectionTitle from "./components/SectionTitle";
 import FeaturedProductsGrid from "./components/FeaturedProductsGrid";
 import PrimaryButton from "./components/buttons/PrimaryButton";
+import FooterNav from "./components/FooterNav";
+import MyFooter from "./components/MyFooter";
 
 // Photos
 import CigarPhoto from "./images/cigar-photo.jpg";
@@ -111,6 +113,8 @@ export default function App() {
         itemThreeImgUrl={AccessoriesItemSamplePhoto}
       />
       <PrimaryButton buttonTitle="Shop All" />
+      <FooterNav />
+      <MyFooter />
     </AppContainer>
   );
 }

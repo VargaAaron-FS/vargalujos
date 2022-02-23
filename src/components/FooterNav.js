@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import { FaChevronDown } from "react-icons/fa";
 
-export default function MyNav() {
+export default function FooterNav() {
   return (
     <NavContainer>
       <DesktopNav>
@@ -34,7 +34,10 @@ const NavContainer = styled.nav`
   justify-content: center;
   background: #e7e7e7;
   padding: 1rem;
-  border-radius: 0 0 0.25rem 0.25rem;
+  border-radius: 0.25rem 0.25rem 0 0;
+  font-size: 1rem;
+  column-gap: 3rem;
+  margin-top: 5rem;
 `;
 
 const Link = styled.a`
