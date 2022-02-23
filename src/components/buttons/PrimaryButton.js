@@ -19,7 +19,8 @@ const Button = styled.button`
   color: #fff;
   padding: 1rem 3rem;
   justify-content: center;
-  font-family: 'Arial Black', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 1rem;
   cursor: pointer;

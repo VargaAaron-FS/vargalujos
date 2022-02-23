@@ -7,7 +7,7 @@ import { FaSearch } from "react-icons/fa";
 export default function SearchBar() {
   return (
     <SearchContainer>
-      <FaSearch style={{ position: "absolute", right: "1rem", top: "1.25rem", cursor: "pointer", color: "#C4C4C4" }} />
+      <FaSearch style={{ position: "absolute", right: "1rem", top: "1.35rem", cursor: "pointer", color: "#C4C4C4" }} />
       <Input placeholder="Search for products" />
     </SearchContainer>
   );
@@ -27,5 +27,5 @@ const Input = styled.input`
   font-size: 1rem;
   color: #151515;
   width: 100%;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', sans-serif;
 `;
