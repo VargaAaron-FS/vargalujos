@@ -18,6 +18,6 @@ const SectionTitleContainer = styled.div`
   background: #151515;
   border-radius: .25rem;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 5rem;
   text-transform: uppercase;
 `;

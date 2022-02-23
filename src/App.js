@@ -1,13 +1,15 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 // Components
 import MyHeader from "./components/MyHeader";
-import MyNav from './components/MyNav';
-import SearchBar from './components/SearchBar';
+import MyNav from "./components/MyNav";
+import SearchBar from "./components/SearchBar";
 import CategoryCard from "./components/CategoryCard";
-import CategoryCardLong from './components/CategoryCardLong';
-import SectionTitle from './components/SectionTitle';
+import CategoryCardLong from "./components/CategoryCardLong";
+import SectionTitle from "./components/SectionTitle";
+import FeaturedProductsGrid from "./components/FeaturedProductsGrid";
+import PrimaryButton from "./components/buttons/PrimaryButton";
 
 // Photos
 import CigarPhoto from "./images/cigar-photo.jpg";
@@ -15,6 +17,7 @@ import WinesPhoto from "./images/wines-photo.jpg";
 import CoffeePhoto from "./images/coffee-photo.jpg";
 import RecipesPhoto from "./images/recipes-photo.jpg";
 import AccessoriesPhoto from "./images/accessories-photo.jpg";
+import CigarItemSamplePhoto from "./images/cigar-item-sample.png";
 
 // Pages
 // Pages go here!
@@ -35,8 +38,75 @@ export default function App() {
         <CategoryCard categoryTitle="Coffee" bgImgUrl={CoffeePhoto} />
         <CategoryCard categoryTitle="Recipes" bgImgUrl={RecipesPhoto} />
       </Grid>
-      <CategoryCardLong categoryTitle="Accessories" bgImgUrl={AccessoriesPhoto} />
+      <CategoryCardLong
+        categoryTitle="Accessories"
+        bgImgUrl={AccessoriesPhoto}
+      />
       <SectionTitle sectionTitle="Featured Cigars" />
+      <FeaturedProductsGrid
+        productOneDescription="Product Description"
+        productTwoDescription="Product Description"
+        productThreeDescription="Product Description"
+        prodOnePrice="$10.00"
+        prodTwoPrice="$20.00"
+        prodThreePrice="$30.00"
+        itemOneImgUrl={CigarItemSamplePhoto}
+        itemTwoImgUrl={CigarItemSamplePhoto}
+        itemThreeImgUrl={CigarItemSamplePhoto}
+      />
+      <PrimaryButton buttonTitle="View All" />
+      <SectionTitle sectionTitle="Featured Wines" />
+      <FeaturedProductsGrid
+        productOneDescription="Product Description"
+        productTwoDescription="Product Description"
+        productThreeDescription="Product Description"
+        prodOnePrice="$10.00"
+        prodTwoPrice="$20.00"
+        prodThreePrice="$30.00"
+        itemOneImgUrl={CigarItemSamplePhoto}
+        itemTwoImgUrl={CigarItemSamplePhoto}
+        itemThreeImgUrl={CigarItemSamplePhoto}
+      />
+      <PrimaryButton buttonTitle="View All" />
+      <SectionTitle sectionTitle="Featured Coffee" />
+      <FeaturedProductsGrid
+        productOneDescription="Product Description"
+        productTwoDescription="Product Description"
+        productThreeDescription="Product Description"
+        prodOnePrice="$10.00"
+        prodTwoPrice="$20.00"
+        prodThreePrice="$30.00"
+        itemOneImgUrl={CigarItemSamplePhoto}
+        itemTwoImgUrl={CigarItemSamplePhoto}
+        itemThreeImgUrl={CigarItemSamplePhoto}
+      />
+      <PrimaryButton buttonTitle="View All" />
+      <SectionTitle sectionTitle="Featured Recipes" />
+      <FeaturedProductsGrid
+        productOneDescription="Product Description"
+        productTwoDescription="Product Description"
+        productThreeDescription="Product Description"
+        prodOnePrice="$10.00"
+        prodTwoPrice="$20.00"
+        prodThreePrice="$30.00"
+        itemOneImgUrl={CigarItemSamplePhoto}
+        itemTwoImgUrl={CigarItemSamplePhoto}
+        itemThreeImgUrl={CigarItemSamplePhoto}
+      />
+      <PrimaryButton buttonTitle="View All" />
+      <SectionTitle sectionTitle="Featured Accessories" />
+      <FeaturedProductsGrid
+        productOneDescription="Product Description"
+        productTwoDescription="Product Description"
+        productThreeDescription="Product Description"
+        prodOnePrice="$10.00"
+        prodTwoPrice="$20.00"
+        prodThreePrice="$30.00"
+        itemOneImgUrl={CigarItemSamplePhoto}
+        itemTwoImgUrl={CigarItemSamplePhoto}
+        itemThreeImgUrl={CigarItemSamplePhoto}
+      />
+      <PrimaryButton buttonTitle="View All" />
     </AppContainer>
   );
 }
