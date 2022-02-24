@@ -31,4 +31,10 @@ const Button = styled.button`
   &:hover {
     background: #000;
   }
+  @media (min-width: 1280px) {
+    font-size: 1.25rem;
+  }
+  @media (min-width: 1536px) {
+    font-size: 1.5rem;
+  }
 `;
