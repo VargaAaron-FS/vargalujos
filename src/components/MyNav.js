@@ -10,9 +10,9 @@ import {
 } from "react-icons/fa";
 
 export default function MyNav() {
-  // Dropdown menu hovers
+  // Desktop dropdown menu hovers
 
-  // Products dropdown hover
+  // - Products dropdown hover
   function ProductsHoverOn() {
     document.querySelector(ProductsDropDownContainer).style.display = "flex";
   }
@@ -20,7 +20,7 @@ export default function MyNav() {
     document.querySelector(ProductsDropDownContainer).style.display = "none";
   }
 
-  // Recipes dropdown hover
+  // - Recipes dropdown hover
   function RecipesHoverOn() {
     document.querySelector(RecipesDropDownContainer).style.display = "flex";
   }
@@ -28,13 +28,22 @@ export default function MyNav() {
     document.querySelector(RecipesDropDownContainer).style.display = "none";
   }
 
-  // Accessories dropdown hover
+  // - Accessories dropdown hover
   function AccessoriesHoverOn() {
     document.querySelector(AccessoriesDropDownContainer).style.display = "flex";
   }
   function AccessoriesHoverOff() {
     document.querySelector(AccessoriesDropDownContainer).style.display = "none";
   }
+
+  // Mobile dropdown menu clicks/touches
+
+  // - Menu/nav
+
+  // - User/Account
+
+  // - Shopping cart
+
   return (
     <NavContainer>
       <DesktopNav>
@@ -301,7 +310,7 @@ const MobileNav = styled.nav`
 const MobileMenuButton = styled.button`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   flex-direction: row;
   column-gap: 0.5rem;
   font-family: "Poppins", sans-serif;
@@ -311,6 +320,7 @@ const MobileMenuButton = styled.button`
   background: transparent;
   text-decoration: underline;
   color: #151515;
+  padding: 0;
   &:hover {
     text-decoration: none;
   }
