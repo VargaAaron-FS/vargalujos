@@ -56,6 +56,6 @@ text-shadow: 0px 0px 2rem #151515;
   font-size: 1.5rem;
 }
 @media (min-width: 1536px) {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 `;

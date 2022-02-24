@@ -2,7 +2,7 @@ import React from "react";
 // import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-import { FaChevronDown, FaBars } from "react-icons/fa";
+import { FaChevronDown, FaBars, FaUserAlt, FaShoppingCart } from "react-icons/fa";
 
 export default function MyNav() {
   // Dropdown menu hovers
@@ -75,6 +75,9 @@ export default function MyNav() {
           </AccessoriesDropDownContainer>
         <HistoryLink href="#">History</HistoryLink>
         <BlogLink href="#">Blog</BlogLink>
+        <span>&mdash;</span>
+        <UserLink href="#"><FaUserAlt /></UserLink>
+        <ShoppingCartLink href="#"><FaShoppingCart /></ShoppingCartLink>
       </DesktopNav>
       <MobileNav>
         <MobileMenuButton><FaBars />Menu</MobileMenuButton>
@@ -200,7 +203,29 @@ const HistoryLink = styled.a`
   }
 `;
 
+const UserLink = styled.a`
+  display: flex;
+  flex-direction: row;
+  color: #151515;
+  align-items: center;
+  z-index: 10;
+  &:hover {
+    text-decoration: none;
+  }
+`;
+
 const BlogLink = styled.a`
+  display: flex;
+  flex-direction: row;
+  color: #151515;
+  align-items: center;
+  z-index: 10;
+  &:hover {
+    text-decoration: none;
+  }
+`;
+
+const ShoppingCartLink = styled.a`
   display: flex;
   flex-direction: row;
   color: #151515;
@@ -218,7 +243,7 @@ const DesktopNav = styled.nav`
   font-size: 1rem;
   column-gap: 3rem;
   position: relative;
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     display: none;
   }
 `;
@@ -226,7 +251,7 @@ const DesktopNav = styled.nav`
 const MobileNav = styled.nav`
   display: none;
   width: 100%;
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     display: flex;
   }
 `;
