@@ -6,9 +6,9 @@ export default function CategoryCard(props) {
   return (
     <CategoryCardContainer style={{ backgroundImage: `url(${props.bgImgUrl})` }}>
       <TintCover>
-        <h2 style={{ color: "#fff", textTransform: "uppercase", borderBottom: "2px solid #FFD800", alignSelf: "center", fontSize: "2rem", textShadow: "0px 0px 2rem #151515" }}>
+        <H2>
           {props.categoryTitle}
-        </h2>
+        </H2>
       </TintCover>
     </CategoryCardContainer>
   );
@@ -43,4 +43,16 @@ const TintCover = styled.div`
   &:hover {
     background-color:rgba(21, 21, 21, 0);
   }
+`;
+
+const H2 = styled.h2`
+color: #fff;
+text-transform: uppercase;
+border-bottom: 2px solid #FFD800;
+align-self: center;
+font-size: 2rem;
+text-shadow: 0px 0px 2rem #151515;
+@media (max-width: 640px) {
+  font-size: 1.5rem;
+}
 `;

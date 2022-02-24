@@ -6,9 +6,9 @@ export default function CategoryCardLong(props) {
   return (
     <CategoryCardContainer style={{ backgroundImage: `url(${props.bgImgUrl})` }}>
       <TintCover>
-        <h2 style={{ color: "#fff", textTransform: "uppercase", borderBottom: "2px solid #FFD800", alignSelf: "center", fontSize: "2rem", textShadow: "0px 0px 2rem #151515" }}>
+        <H2>
           {props.categoryTitle}
-        </h2>
+        </H2>
       </TintCover>
     </CategoryCardContainer>
   );
@@ -27,7 +27,11 @@ const CategoryCardContainer = styled.div`
   background-repeat: no-repeat;
   margin-top: 1rem;
   @media (max-width: 640px) {
-    aspect-ratio: 1/1;
+    aspect-ratio: 2/1;
+  }
+  @media (min-width: 768px) {
+    aspect-ratio: 4/1;
+    margin-top: 0;
   }
   @media (min-width: 1280px) {
     aspect-ratio: 4/1;
@@ -50,4 +54,16 @@ const TintCover = styled.div`
   &:hover {
     background-color:rgba(21, 21, 21, 0);
   }
+`;
+
+const H2 = styled.h2`
+color: #fff;
+text-transform: uppercase;
+border-bottom: 2px solid #FFD800;
+align-self: center;
+font-size: 2rem;
+text-shadow: 0px 0px 2rem #151515;
+@media (max-width: 640px) {
+  font-size: 1.5rem;
+}
 `;

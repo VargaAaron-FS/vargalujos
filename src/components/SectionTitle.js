@@ -5,9 +5,9 @@ import styled from "styled-components";
 export default function SectionTitle(props) {
   return (
     <SectionTitleContainer>
-      <h3 style={{ fontSize: "2rem", color: "#fff", padding: "1rem", borderRight: "2px solid #FFD800", borderLeft: "2px solid #FFD800", margin: ".5rem", width: "100%", textAlign: "center" }}>
+      <H3>
         {props.sectionTitle}
-      </h3>
+      </H3>
     </SectionTitleContainer>
   );
 }
@@ -20,4 +20,18 @@ const SectionTitleContainer = styled.div`
   justify-content: center;
   margin-top: 5rem;
   text-transform: uppercase;
+`;
+
+const H3 = styled.h3`
+font-size: 2rem;
+color: #fff;
+padding: 1rem;
+border-right: 2px solid #FFD800;
+border-left: 2px solid #FFD800;
+margin: .5rem;
+width: 100%;
+text-align: center;
+@media (max-width: 640px) {
+  font-size: 1.5rem;
+}
 `;

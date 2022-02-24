@@ -13,6 +13,13 @@ export default function MyNav() {
           Products{" "}
           <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
         </Link>
+        <ProductsDropDownContainer className="dropdown">
+            <Link href="#">Cigars</Link>
+            <Link href="#">Wines</Link>
+            <Link href="#">Coffee</Link>
+            <Link href="#">Recipes</Link>
+            <Link href="#">Accessories</Link>
+          </ProductsDropDownContainer>
         <Link href="#">
           Recipes{" "}
           <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
@@ -53,6 +60,7 @@ const DesktopNav = styled.nav`
   justify-content: center;
   font-size: 1rem;
   column-gap: 3rem;
+  position: relative;
   @media (max-width: 768px) {
     display: none;
   }
@@ -63,4 +71,19 @@ const MobileNav = styled.nav`
   @media (max-width: 768px) {
     display: flex;
   }
+`;
+
+const ProductsDropDownContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  position: absolute;
+  top: 2.56rem;
+  left: 5rem;
+  padding: 1rem;
+  z-index: 1;
+  background: #e7e7e7;
+  min-width: 88px;
+  border-radius: 0 0 .25rem .25rem;
+  display: none;
 `;
