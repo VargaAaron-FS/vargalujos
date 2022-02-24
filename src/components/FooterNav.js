@@ -2,24 +2,19 @@ import React from "react";
 // import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-import { FaChevronDown } from "react-icons/fa";
-
 export default function FooterNav() {
   return (
     <NavContainer>
       <DesktopNav>
         <Link href="#">Home</Link>
         <Link href="#">
-          Products{" "}
-          <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
+          Products
         </Link>
         <Link href="#">
-          Recipes{" "}
-          <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
+          Recipes
         </Link>
         <Link href="#">
-          Accessories{" "}
-          <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
+          Accessories
         </Link>
         <Link href="#">History</Link>
       </DesktopNav>

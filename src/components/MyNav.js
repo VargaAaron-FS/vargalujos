@@ -2,7 +2,7 @@ import React from "react";
 // import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronDown, FaBars } from "react-icons/fa";
 
 export default function MyNav() {
   // Dropdown menu hovers
@@ -76,7 +76,9 @@ export default function MyNav() {
         <HistoryLink href="#">History</HistoryLink>
         <BlogLink href="#">Blog</BlogLink>
       </DesktopNav>
-      <MobileNav>Mobile Nav</MobileNav>
+      <MobileNav>
+        <MobileMenuButton><FaBars />Menu</MobileMenuButton>
+      </MobileNav>
     </NavContainer>
   );
 }
@@ -223,7 +225,26 @@ const DesktopNav = styled.nav`
 
 const MobileNav = styled.nav`
   display: none;
+  width: 100%;
   @media (max-width: 768px) {
     display: flex;
+  }
+`;
+
+const MobileMenuButton = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  column-gap: .5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  width: 100%;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
   }
 `;

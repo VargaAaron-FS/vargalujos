@@ -66,4 +66,7 @@ text-shadow: 0px 0px 2rem #151515;
 @media (max-width: 640px) {
   font-size: 1.5rem;
 }
+@media (min-width: 1536px) {
+  font-size: 3rem;
+}
 `;
