@@ -20,6 +20,11 @@ export default function FeaturedProductsGrid(props) {
         <ProductTitle>{props.productThreeTitle}</ProductTitle>
         <Price>{props.prodThreePrice}</Price>
       </GridItem>
+      <GridItem>
+        <ItemImage src={props.itemThreeImgUrl} />
+        <ProductTitle>{props.productThreeTitle}</ProductTitle>
+        <Price>{props.prodThreePrice}</Price>
+      </GridItem>
     </FeaturedProductsGridContainer>
   );
 }
@@ -27,11 +32,11 @@ export default function FeaturedProductsGrid(props) {
 const FeaturedProductsGridContainer = styled.div`
   display: grid;
   margin-top: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto auto;
   column-gap: 1rem;
-  @media (max-width: 640px) {
-    grid-template-columns: 1fr;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
     row-gap: 1rem;
   }
 `;

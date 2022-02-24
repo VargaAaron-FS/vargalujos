@@ -16,12 +16,12 @@ const LogoContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 1rem;
+  padding: 2rem 1rem;
   margin: auto;
 `;
 
 const LogoImage = styled.img`
   cursor: pointer;
   width: 100%;
-  max-width: 330px;
+  max-width: 1000px;
 `;

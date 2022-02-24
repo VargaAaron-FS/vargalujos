@@ -132,10 +132,7 @@ const Grid = styled.div`
   grid-template-rows: auto auto;
   gap: 1rem;
   margin-top: 1rem;
-  @media (max-width: 640px) {
-    grid-template-columns: 1fr;
-  }
-  @media (min-width: 1280px) {
+  @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 `;
