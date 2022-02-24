@@ -21,9 +21,9 @@ export default function FeaturedProductsGrid(props) {
         <Price>{props.prodThreePrice}</Price>
       </GridItem>
       <GridItem>
-        <ItemImage src={props.itemThreeImgUrl} />
-        <ProductTitle>{props.productThreeTitle}</ProductTitle>
-        <Price>{props.prodThreePrice}</Price>
+        <ItemImage src={props.itemFourImgUrl} />
+        <ProductTitle>{props.productFourTitle}</ProductTitle>
+        <Price>{props.prodFourPrice}</Price>
       </GridItem>
     </FeaturedProductsGridContainer>
   );
