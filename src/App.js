@@ -53,12 +53,15 @@ export default function App() {
         productOneTitle="Product Title"
         productTwoTitle="Product Title"
         productThreeTitle="Product Title"
+        productFourTitle="Product Title"
         prodOnePrice="$10.00"
         prodTwoPrice="$20.00"
         prodThreePrice="$30.00"
+        prodFourPrice="$40.00"
         itemOneImgUrl={CigarItemSamplePhoto}
         itemTwoImgUrl={CigarItemSamplePhoto}
         itemThreeImgUrl={CigarItemSamplePhoto}
+        itemFourImgUrl={CigarItemSamplePhoto}
       />
       <PrimaryButton buttonTitle="Shop All" />
       <SectionTitle sectionTitle="Featured Wines" />
@@ -66,12 +69,15 @@ export default function App() {
         productOneTitle="Product Title"
         productTwoTitle="Product Title"
         productThreeTitle="Product Title"
+        productFourTitle="Product Title"
         prodOnePrice="$10.00"
         prodTwoPrice="$20.00"
         prodThreePrice="$30.00"
+        prodFourPrice="$40.00"
         itemOneImgUrl={WineItemSamplePhoto}
         itemTwoImgUrl={WineItemSamplePhoto}
         itemThreeImgUrl={WineItemSamplePhoto}
+        itemFourImgUrl={WineItemSamplePhoto}
       />
       <PrimaryButton buttonTitle="Shop All" />
       <SectionTitle sectionTitle="Featured Coffee" />
@@ -79,12 +85,15 @@ export default function App() {
         productOneTitle="Product Title"
         productTwoTitle="Product Title"
         productThreeTitle="Product Title"
+        productFourTitle="Product Title"
         prodOnePrice="$10.00"
         prodTwoPrice="$20.00"
         prodThreePrice="$30.00"
+        prodFourPrice="$40.00"
         itemOneImgUrl={CoffeeItemSamplePhoto}
         itemTwoImgUrl={CoffeeItemSamplePhoto}
         itemThreeImgUrl={CoffeeItemSamplePhoto}
+        itemFourImgUrl={CoffeeItemSamplePhoto}
       />
       <PrimaryButton buttonTitle="Shop All" />
       <SectionTitle sectionTitle="Featured Recipes" />
@@ -92,12 +101,15 @@ export default function App() {
         productOneTitle="Product Description"
         productTwoTitle="Product Description"
         productThreeTitle="Product Description"
+        productFourTitle="Product Description"
         prodOnePrice="$10.00"
         prodTwoPrice="$20.00"
         prodThreePrice="$30.00"
+        prodFourPrice="$40.00"
         itemOneImgUrl={RecipesItemSamplePhoto}
         itemTwoImgUrl={RecipesItemSamplePhoto}
         itemThreeImgUrl={RecipesItemSamplePhoto}
+        itemFourImgUrl={RecipesItemSamplePhoto}
       />
       <PrimaryButton buttonTitle="Shop All" />
       <SectionTitle sectionTitle="Featured Accessories" />
@@ -105,12 +117,15 @@ export default function App() {
         productOneTitle="Product Title"
         productTwoTitle="Product Title"
         productThreeTitle="Product Title"
+        productFourTitle="Product Title"
         prodOnePrice="$10.00"
         prodTwoPrice="$20.00"
         prodThreePrice="$30.00"
+        prodFourPrice="$40.00"
         itemOneImgUrl={AccessoriesItemSamplePhoto}
         itemTwoImgUrl={AccessoriesItemSamplePhoto}
         itemThreeImgUrl={AccessoriesItemSamplePhoto}
+        itemFourImgUrl={AccessoriesItemSamplePhoto}
       />
       <PrimaryButton buttonTitle="Shop All" />
       <FooterNav />
