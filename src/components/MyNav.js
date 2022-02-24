@@ -244,6 +244,7 @@ const MobileMenuButton = styled.button`
   background: transparent;
   width: 100%;
   text-decoration: underline;
+  color: #151515;
   &:hover {
     text-decoration: none;
   }
