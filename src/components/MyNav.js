@@ -4,25 +4,27 @@ import styled from "styled-components";
 
 import { FaChevronDown } from "react-icons/fa";
 
-let ProductsLinkTrigger = document.querySelector(".productsDropMenuTrigger");
+// Products dropdown functions
 
-let ProdMenu = document.querySelector(".prodMenu");
+// let ProductsLinkTrigger = document.querySelector(".productsDropMenuTrigger");
 
-ProductsLinkTrigger.addEventListener("mouseover", function() {
-    ProdMenu.style.display = "flex";
-});
+// let ProdMenu = document.querySelector(".prodMenu");
 
-ProductsLinkTrigger.addEventListener("mouseleave", function() {
-  ProdMenu.style.display = "none";
-});
+// ProductsLinkTrigger.addEventListener("mouseover", function() {
+//     ProdMenu.style.display = "flex";
+// });
 
-ProdMenu.addEventListener("mouseover", function() {
-  ProdMenu.style.display = "flex";
-});
+// ProductsLinkTrigger.addEventListener("mouseleave", function() {
+//   ProdMenu.style.display = "none";
+// });
 
-ProdMenu.addEventListener("mouseleave", function() {
-  ProdMenu.style.display = "none";
-});
+// ProdMenu.addEventListener("mouseover", function() {
+//   ProdMenu.style.display = "flex";
+// });
+
+// ProdMenu.addEventListener("mouseleave", function() {
+//   ProdMenu.style.display = "none";
+// });
 
 export default function MyNav() {
   return (
