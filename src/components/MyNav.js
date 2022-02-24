@@ -4,38 +4,23 @@ import styled from "styled-components";
 
 import { FaChevronDown } from "react-icons/fa";
 
-// Products dropdown functions
-
-// let ProductsLinkTrigger = document.querySelector(".productsDropMenuTrigger");
-
-// let ProdMenu = document.querySelector(".prodMenu");
-
-// ProductsLinkTrigger.addEventListener("mouseover", function() {
-//     ProdMenu.style.display = "flex";
-// });
-
-// ProductsLinkTrigger.addEventListener("mouseleave", function() {
-//   ProdMenu.style.display = "none";
-// });
-
-// ProdMenu.addEventListener("mouseover", function() {
-//   ProdMenu.style.display = "flex";
-// });
-
-// ProdMenu.addEventListener("mouseleave", function() {
-//   ProdMenu.style.display = "none";
-// });
-
 export default function MyNav() {
+  // Dropdown menu hovers
+  function HoverOn() {
+    document.querySelector(ProductsDropDownContainer).style.display = "flex";
+  }
+  function HoverOff() {
+    document.querySelector(ProductsDropDownContainer).style.display = "none";
+  }
   return (
     <NavContainer>
       <DesktopNav>
         <HomeLink href="#">Home</HomeLink>
-        <ProductsLink href="#" className="productsDropMenuTrigger">
+        <ProductsLink href="#" onMouseEnter={HoverOn} onMouseLeave={HoverOff}>
           Products{" "}
           <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
         </ProductsLink>
-        <ProductsDropDownContainer className="prodMenu">
+        <ProductsDropDownContainer onMouseEnter={HoverOn} onMouseLeave={HoverOff}>
             <Link href="#">Cigars</Link>
             <Link href="#">Wines</Link>
             <Link href="#">Coffee</Link>
@@ -65,6 +50,20 @@ const NavContainer = styled.nav`
   background: #e7e7e7;
   padding: 1rem;
   border-radius: 0 0 0.25rem 0.25rem;
+`;
+
+const ProductsDropDownContainer = styled.div`
+  flex-direction: column;
+  row-gap: 1rem;
+  position: absolute;
+  top: 0rem;
+  left: 5rem;
+  padding: 3rem 1rem 1rem 1rem;
+  z-index: 1;
+  background: #e7e7e7;
+  min-width: 88px;
+  border-radius: 0 0 .25rem .25rem;
+  display: none;
 `;
 
 const Link = styled.a`
@@ -154,20 +153,6 @@ const DesktopNav = styled.nav`
   @media (max-width: 768px) {
     display: none;
   }
-`;
-
-const ProductsDropDownContainer = styled.div`
-  flex-direction: column;
-  row-gap: 1rem;
-  position: absolute;
-  top: 0rem;
-  left: 5rem;
-  padding: 3rem 1rem 1rem 1rem;
-  z-index: 1;
-  background: #e7e7e7;
-  min-width: 88px;
-  border-radius: 0 0 .25rem .25rem;
-  display: none;
 `;
 
 const MobileNav = styled.nav`
