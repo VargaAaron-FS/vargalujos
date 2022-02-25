@@ -7,6 +7,7 @@ import {
   FaBars,
   FaUserAlt,
   FaShoppingCart,
+  FaTimes,
 } from "react-icons/fa";
 
 export default function MyNav() {
@@ -39,6 +40,12 @@ export default function MyNav() {
   // Mobile dropdown menu clicks/touches
 
   // - Menu/nav
+  function MobileNavClick() {
+    document.querySelector(MobileNavMenu).style.display = "flex";
+  }
+  function MobileNavExit() {
+    document.querySelector(MobileNavMenu).style.display = "none";
+  }
 
   // - User/Account
 
@@ -119,7 +126,7 @@ export default function MyNav() {
         </ShoppingCartLink>
       </DesktopNav>
       <MobileNav>
-        <MobileMenuButton>
+        <MobileMenuButton onClick={MobileNavClick}>
           <FaBars />
           Menu
         </MobileMenuButton>
@@ -130,6 +137,11 @@ export default function MyNav() {
           <FaShoppingCart />
         </ShoppingCartLink>
       </MobileNav>
+      <MobileNavMenu>
+        <CloseMenuLink onClick={MobileNavExit}>
+          <FaTimes /> Close
+        </CloseMenuLink>
+      </MobileNavMenu>
     </NavContainer>
   );
 }
@@ -324,4 +336,27 @@ const MobileMenuButton = styled.button`
   &:hover {
     text-decoration: none;
   }
+`;
+
+const MobileNavMenu = styled.div`
+  display: none;
+  flex-direction: column;
+  background: #e7e7e7;
+  width: calc(100vw - 0.95rem);
+  height: 100vh;
+  z-index: 20;
+  top: 0;
+  position: fixed;
+  left: 0rem;
+  padding: 1rem;
+  align-items: start;
+`;
+
+const CloseMenuLink = styled.a`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 0.25rem;
+  cursor: pointer;
+  width: calc(100% - 2rem);
 `;
