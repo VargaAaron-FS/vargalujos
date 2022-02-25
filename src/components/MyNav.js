@@ -364,7 +364,6 @@ const MobileNavMenu = styled.div`
   position: fixed;
   left: 0rem;
   padding: 1rem;
-  align-items: start;
   margin: 1rem;
   border-radius: 0.25rem;
   @media (max-width: 640px) {
@@ -378,5 +377,5 @@ const CloseMenuLink = styled.a`
   align-items: center;
   column-gap: 0.25rem;
   cursor: pointer;
-  width: calc(100% - 2rem);
+  margin-left: auto;
 `;
