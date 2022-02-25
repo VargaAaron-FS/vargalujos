@@ -42,6 +42,7 @@ export default function MyNav() {
   // - Menu/nav
   function MobileNavClick() {
     document.querySelector(MobileNavMenu).style.display = "flex";
+    document.querySelector("body").style.background = "#151515";
   }
   function MobileNavExit() {
     document.querySelector(MobileNavMenu).style.display = "none";
@@ -342,14 +343,19 @@ const MobileNavMenu = styled.div`
   display: none;
   flex-direction: column;
   background: #e7e7e7;
-  width: calc(100vw - 0.95rem);
-  height: 100vh;
+  width: calc(100vw - 4.9rem);
+  height: calc(100vh - 3.9rem);
   z-index: 20;
   top: 0;
   position: fixed;
   left: 0rem;
   padding: 1rem;
   align-items: start;
+  margin: 1rem;
+  border-radius: .25rem;
+  @media (max-width: 640px) {
+    border-radius: .25rem .25rem 47.33px 47.33px;
+  }
 `;
 
 const CloseMenuLink = styled.a`
