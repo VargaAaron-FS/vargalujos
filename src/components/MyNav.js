@@ -42,9 +42,11 @@ export default function MyNav() {
   // - Menu/nav
   function MobileNavClick() {
     document.querySelector(MobileNavMenu).style.display = "flex";
+    document.querySelector(".mobileMenuBgTint").style.display = "flex";
   }
   function MobileNavExit() {
     document.querySelector(MobileNavMenu).style.display = "none";
+    document.querySelector(".mobileMenuBgTint").style.display = "none";
   }
 
   // - User/Account
@@ -126,6 +128,19 @@ export default function MyNav() {
         </ShoppingCartLink>
       </DesktopNav>
       <MobileNav>
+        <span
+          style={{
+            backgroundColor: "rgba(21,21,21,1)",
+            display: "none",
+            height: "100vh",
+            width: "100vw",
+            position: "fixed",
+            top: "0",
+            left: "0",
+            zIndex: "5",
+          }}
+          className="mobileMenuBgTint"
+        ></span>
         <MobileMenuButton onClick={MobileNavClick}>
           <FaBars />
           Menu
@@ -342,14 +357,19 @@ const MobileNavMenu = styled.div`
   display: none;
   flex-direction: column;
   background: #e7e7e7;
-  width: calc(100vw - 0.95rem);
-  height: 100vh;
+  width: calc(100vw - 4.9rem);
+  height: calc(100vh - 3.9rem);
   z-index: 20;
   top: 0;
   position: fixed;
   left: 0rem;
   padding: 1rem;
   align-items: start;
+  margin: 1rem;
+  border-radius: 0.25rem;
+  @media (max-width: 640px) {
+    border-radius: 0.25rem 0.25rem 47.33px 47.33px;
+  }
 `;
 
 const CloseMenuLink = styled.a`

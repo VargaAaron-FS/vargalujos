@@ -98,10 +98,10 @@ export default function App() {
       <PrimaryButton buttonTitle="Shop All" />
       <SectionTitle sectionTitle="Featured Recipes" />
       <FeaturedProductsGrid
-        productOneTitle="Product Description"
-        productTwoTitle="Product Description"
-        productThreeTitle="Product Description"
-        productFourTitle="Product Description"
+        productOneTitle="Product Title"
+        productTwoTitle="Product Title"
+        productThreeTitle="Product Title"
+        productFourTitle="Product Title"
         prodOnePrice="$10.00"
         prodTwoPrice="$20.00"
         prodThreePrice="$30.00"

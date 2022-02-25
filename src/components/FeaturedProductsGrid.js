@@ -55,11 +55,13 @@ const GridItem = styled.div`
 const ProductTitle = styled.p`
   margin: 0;
   margin-top: 1rem;
+  text-align: center;
 `;
 
 const Price = styled.p`
   margin: 0;
   margin-top: .5rem;
+  text-align: center;
 `;
 
 const ItemImage = styled.img`
