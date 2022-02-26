@@ -357,8 +357,8 @@ const MobileNavMenu = styled.div`
   display: none;
   flex-direction: column;
   background: #e7e7e7;
-  width: calc(100vw - 4.9rem);
-  height: calc(100vh - 3.9rem);
+  width: calc(100% - 4rem);
+  height: calc(100% - 4rem);
   z-index: 20;
   top: 0;
   position: fixed;
