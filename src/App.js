@@ -12,6 +12,7 @@ import FeaturedProductsGrid from "./components/FeaturedProductsGrid";
 import PrimaryButton from "./components/buttons/PrimaryButton";
 import FooterNav from "./components/FooterNav";
 import MyFooter from "./components/MyFooter";
+import Announcement from "./components/Announcement";
 
 // Photos
 import CigarPhoto from "./images/cigar-photo.jpg";
@@ -37,9 +38,7 @@ export default function App() {
       <MyHeader />
       <MyNav />
       <SearchBar />
-      {/* Create a component for the below inline style code for pairing assistant */}
-      {/* Make hover state so background turns pure black like buttons */}
-      <a href="/" style={{ marginTop: "1rem", display: "block", textAlign: "center", alignItems: "center", padding: "0 1rem", color: "#fff", background: "#151515", padding: "1rem", borderRadius: ".25rem", textDecoration: "none" }}>Get help pairing products that go amazing together with our very own <span style={{ color: "#FFD800", fontWeight: "700", textDecoration: "underline" }}>Pairing&nbsp;Assistant</span></a>
+      <Announcement announcementCopy="Get help pairing products that go amazing together with our very own " linkHighlight="Pairing&nbsp;Assistant" />
       <Grid>
         {/* TODO: Make grid responsive and change to certain breakpoints */}
         <CategoryCard categoryTitle="Cigars" bgImgUrl={CigarPhoto} />
