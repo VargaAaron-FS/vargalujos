@@ -1,4 +1,4 @@
-import React, {  } from "react";
+import React from "react";
 // import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -8,18 +8,14 @@ export default function Announcement(props) {
       <Link href="/">
         <Paragraph>
           {props.announcementCopy}
-          <LinkHighlight>
-            {props.linkHighlight}
-          </LinkHighlight>
+          <LinkHighlight>{props.linkHighlight}</LinkHighlight>
         </Paragraph>
       </Link>
     </AnnouncementContainer>
   );
 }
 
-const AnnouncementContainer = styled.div`
-
-`;
+const AnnouncementContainer = styled.div``;
 
 const Link = styled.a`
   margin-top: 1rem;
@@ -27,7 +23,7 @@ const Link = styled.a`
   text-align: center;
   align-items: center;
   padding: 1rem;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   text-decoration: none;
   color: #fff;
   background: #151515;
@@ -41,7 +37,7 @@ const Paragraph = styled.p`
 `;
 
 const LinkHighlight = styled.span`
-  color: #FFD800;
+  color: #ffd800;
   font-weight: 700;
   text-decoration: underline;
 `;

@@ -38,9 +38,11 @@ export default function App() {
       <MyHeader />
       <MyNav />
       <SearchBar />
-      <Announcement announcementCopy="Get help pairing products that go amazing together with our very own " linkHighlight="Pairing&nbsp;Assistant" />
+      <Announcement
+        announcementCopy="Get help pairing products that go amazing together with our very own "
+        linkHighlight="Pairing&nbsp;Assistant"
+      />
       <Grid>
-        {/* TODO: Make grid responsive and change to certain breakpoints */}
         <CategoryCard categoryTitle="Cigars" bgImgUrl={CigarPhoto} />
         <CategoryCard categoryTitle="Wines" bgImgUrl={WinesPhoto} />
         <CategoryCard categoryTitle="Coffee" bgImgUrl={CoffeePhoto} />

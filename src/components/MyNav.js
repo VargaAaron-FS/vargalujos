@@ -156,6 +156,24 @@ export default function MyNav() {
         <CloseMenuLink onClick={MobileNavExit}>
           <FaTimes /> Close
         </CloseMenuLink>
+        <Link href="#" style={{ marginRight: "auto", marginTop: "-1rem" }}>
+          Home
+        </Link>
+        <Link href="#" style={{ marginRight: "auto" }}>
+          Proucts <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
+        </Link>
+        <Link href="#" style={{ marginRight: "auto" }}>
+          Recipes <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
+        </Link>
+        <Link href="#" style={{ marginRight: "auto" }}>
+          Accessories <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
+        </Link>
+        <Link href="#" style={{ marginRight: "auto" }}>
+          History
+        </Link>
+        <Link href="#" style={{ marginRight: "auto" }}>
+          Blog
+        </Link>
       </MobileNavMenu>
     </NavContainer>
   );
@@ -366,6 +384,7 @@ const MobileNavMenu = styled.div`
   padding: 1rem;
   margin: 1rem;
   border-radius: 0.25rem;
+  row-gap: 2rem;
   @media (max-width: 640px) {
     border-radius: 0.25rem 0.25rem 47.33px 47.33px;
   }
