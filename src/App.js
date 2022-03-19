@@ -25,6 +25,7 @@ import WineItemSamplePhoto from "./images/wine-item-sample.jpg";
 import CoffeeItemSamplePhoto from "./images/coffee-item-sample.jpg";
 import RecipesItemSamplePhoto from "./images/recipes-item-sample.jpg";
 import AccessoriesItemSamplePhoto from "./images/accessories-item-sample.jpg";
+import TeaPhoto from "./images/tea-photo.jpg";
 
 // Pages
 // Pages go here!
@@ -44,14 +45,17 @@ export default function App() {
       />
       <Grid>
         <CategoryCard categoryTitle="Cigars" bgImgUrl={CigarPhoto} />
-        <CategoryCard categoryTitle="Wines" bgImgUrl={WinesPhoto} />
+        <CategoryCard categoryTitle="Alcohol" bgImgUrl={WinesPhoto} />
         <CategoryCard categoryTitle="Coffee" bgImgUrl={CoffeePhoto} />
-        <CategoryCard categoryTitle="Recipes" bgImgUrl={RecipesPhoto} />
+        <CategoryCard categoryTitle="Tea" bgImgUrl={TeaPhoto} />
       </Grid>
-      <CategoryCardLong
-        categoryTitle="Accessories"
-        bgImgUrl={AccessoriesPhoto}
-      />
+      <Grid2>
+        <CategoryCardLong categoryTitle="Recipes" bgImgUrl={RecipesPhoto} />
+        <CategoryCardLong
+          categoryTitle="Accessories"
+          bgImgUrl={AccessoriesPhoto}
+        />
+      </Grid2>
       <SectionTitle sectionTitle="Featured Cigars" />
       <FeaturedProductsGrid
         productOneTitle="Product Title"
@@ -151,7 +155,17 @@ const Grid = styled.div`
   grid-template-rows: auto auto;
   gap: 1rem;
   margin-top: 1rem;
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+`;
+
+const Grid2 = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
   }
 `;
