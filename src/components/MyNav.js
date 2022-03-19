@@ -70,8 +70,9 @@ export default function MyNav() {
           onMouseLeave={ProductsHoverOff}
         >
           <Link href="#">Cigars</Link>
-          <Link href="#">Wines</Link>
+          <Link href="#">Alcohol</Link>
           <Link href="#">Coffee</Link>
+          <Link href="#">Tea</Link>
           <Link href="#">Recipes</Link>
           <Link href="#">Accessories</Link>
           <Link href="#">Pairing Sets</Link>
@@ -160,13 +161,16 @@ export default function MyNav() {
           Home
         </Link>
         <Link href="#" style={{ marginRight: "auto" }}>
-          Proucts <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
+          Proucts{" "}
+          <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
         </Link>
         <Link href="#" style={{ marginRight: "auto" }}>
-          Recipes <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
+          Recipes{" "}
+          <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
         </Link>
         <Link href="#" style={{ marginRight: "auto" }}>
-          Accessories <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
+          Accessories{" "}
+          <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
         </Link>
         <Link href="#" style={{ marginRight: "auto" }}>
           History

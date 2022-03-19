@@ -53,7 +53,7 @@ align-self: center;
 font-size: 2rem;
 text-shadow: 0px 0px 2rem #151515;
 @media (max-width: 640px) {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 @media (min-width: 1536px) {
   font-size: 2.5rem;

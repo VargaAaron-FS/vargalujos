@@ -21,20 +21,28 @@ const CategoryCardContainer = styled.div`
   border-radius: .25rem;
   justify-content: center;
   cursor: pointer;
-  aspect-ratio: 2/1;
+  aspect-ratio: 4/2;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   margin-top: 1rem;
   @media (max-width: 640px) {
-    aspect-ratio: 2/1;
+    aspect-ratio: 1/1;
   }
-  @media (min-width: 768px) {
-    aspect-ratio: 4/1;
-    margin-top: 0;
+  @media (max-width: 768px) {
+    aspect-ratio: 1/1;
+    margin-top: 1rem;
+  }
+  @media (max-width: 1024px) {
+    aspect-ratio: 1/1;
+    margin-top: 1rem;
+  }
+  @media (min-width: 1024px) {
+    aspect-ratio: 2/1;
+    margin-top: 0rem;
   }
   @media (min-width: 1280px) {
-    aspect-ratio: 4/1;
+    aspect-ratio: 4/2;
     margin-top: 0rem;
   }
 `;
@@ -64,7 +72,7 @@ align-self: center;
 font-size: 2rem;
 text-shadow: 0px 0px 2rem #151515;
 @media (max-width: 640px) {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 @media (min-width: 1536px) {
   font-size: 2.5rem;
