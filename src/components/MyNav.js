@@ -160,13 +160,16 @@ export default function MyNav() {
           Home
         </Link>
         <Link href="#" style={{ marginRight: "auto" }}>
-          Proucts <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
+          Proucts{" "}
+          <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
         </Link>
         <Link href="#" style={{ marginRight: "auto" }}>
-          Recipes <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
+          Recipes{" "}
+          <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
         </Link>
         <Link href="#" style={{ marginRight: "auto" }}>
-          Accessories <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
+          Accessories{" "}
+          <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
         </Link>
         <Link href="#" style={{ marginRight: "auto" }}>
           History

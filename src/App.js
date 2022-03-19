@@ -26,6 +26,7 @@ import CoffeeItemSamplePhoto from "./images/coffee-item-sample.jpg";
 import RecipesItemSamplePhoto from "./images/recipes-item-sample.jpg";
 import AccessoriesItemSamplePhoto from "./images/accessories-item-sample.jpg";
 import TeaPhoto from "./images/tea-photo.jpg";
+import TeaItemSamplePhoto from "./images/tea-item-sample.jpg";
 
 // Pages
 // Pages go here!
@@ -72,7 +73,7 @@ export default function App() {
         itemFourImgUrl={CigarItemSamplePhoto}
       />
       <PrimaryButton buttonTitle="Shop All" />
-      <SectionTitle sectionTitle="Featured Wines" />
+      <SectionTitle sectionTitle="Featured Alcohol" />
       <FeaturedProductsGrid
         productOneTitle="Product Title"
         productTwoTitle="Product Title"
@@ -102,6 +103,22 @@ export default function App() {
         itemTwoImgUrl={CoffeeItemSamplePhoto}
         itemThreeImgUrl={CoffeeItemSamplePhoto}
         itemFourImgUrl={CoffeeItemSamplePhoto}
+      />
+      <PrimaryButton buttonTitle="Shop All" />
+      <SectionTitle sectionTitle="Featured Tea" />
+      <FeaturedProductsGrid
+        productOneTitle="Product Title"
+        productTwoTitle="Product Title"
+        productThreeTitle="Product Title"
+        productFourTitle="Product Title"
+        prodOnePrice="$10.00"
+        prodTwoPrice="$20.00"
+        prodThreePrice="$30.00"
+        prodFourPrice="$40.00"
+        itemOneImgUrl={TeaItemSamplePhoto}
+        itemTwoImgUrl={TeaItemSamplePhoto}
+        itemThreeImgUrl={TeaItemSamplePhoto}
+        itemFourImgUrl={TeaItemSamplePhoto}
       />
       <PrimaryButton buttonTitle="Shop All" />
       <SectionTitle sectionTitle="Featured Recipes" />
