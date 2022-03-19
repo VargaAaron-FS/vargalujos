@@ -26,7 +26,7 @@ import CoffeeItemSamplePhoto from "./images/coffee-item-sample.jpg";
 import RecipesItemSamplePhoto from "./images/recipes-item-sample.jpg";
 import AccessoriesItemSamplePhoto from "./images/accessories-item-sample.jpg";
 import TeaPhoto from "./images/tea-photo.jpg";
-import TeaItemSamplePhoto from "./images/tea-item-sample.jpg";
+import TeaItemSamplePhoto from "./images/tea-item-sample.png";
 
 // Pages
 // Pages go here!
