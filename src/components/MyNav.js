@@ -70,8 +70,9 @@ export default function MyNav() {
           onMouseLeave={ProductsHoverOff}
         >
           <Link href="#">Cigars</Link>
-          <Link href="#">Wines</Link>
+          <Link href="#">Alcohol</Link>
           <Link href="#">Coffee</Link>
+          <Link href="#">Tea</Link>
           <Link href="#">Recipes</Link>
           <Link href="#">Accessories</Link>
           <Link href="#">Pairing Sets</Link>
