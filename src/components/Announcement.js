@@ -1,23 +1,23 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export default function Announcement(props) {
   return (
     <AnnouncementContainer>
-      <Link href="/">
+      <AnnouncementLink to="/pairing-assistant">
         <Paragraph>
           {props.announcementCopy}
           <LinkHighlight>{props.linkHighlight}</LinkHighlight>
         </Paragraph>
-      </Link>
+      </AnnouncementLink>
     </AnnouncementContainer>
   );
 }
 
 const AnnouncementContainer = styled.div``;
 
-const Link = styled.a`
+const AnnouncementLink = styled(Link)`
   margin-top: 1rem;
   display: block;
   text-align: center;

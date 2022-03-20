@@ -11,17 +11,22 @@ import Announcement from "./components/Announcement";
 
 // Routing
 import { Routes, Route } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop";
 
 // Pages
-import Home from './pages/Home';
-import Cigars from './pages/Cigars';
-import Products from './pages/Products';
-import Recipes from './pages/Recipes';
-import Accessories from './pages/Accessories';
-import History from './pages/History';
-import Blog from './pages/Blog';
-import Account from './pages/Account';
-import ShoppingCart from './pages/ShoppingCart';
+import Home from "./pages/Home";
+import Cigars from "./pages/Cigars";
+import Products from "./pages/Products";
+import Recipes from "./pages/Recipes";
+import Accessories from "./pages/Accessories";
+import History from "./pages/History";
+import Blog from "./pages/Blog";
+import Account from "./pages/Account";
+import ShoppingCart from "./pages/ShoppingCart";
+import Alcohol from "./pages/Alcohol";
+import Coffee from "./pages/Coffee";
+import Tea from "./pages/Tea";
+import PairingAssistant from './pages/PairingAssistant';
 
 export default function App() {
   return (
@@ -34,9 +39,13 @@ export default function App() {
         linkHighlight="Pairing&nbsp;Assistant"
       />
       <Main>
-      <Routes>
+        <ScrollToTop>
+          <Routes>
             <Route path="/" element={<Home />} />
             <Route path="cigars" element={<Cigars />} />
+            <Route path="alcohol" element={<Alcohol />} />
+            <Route path="coffee" element={<Coffee />} />
+            <Route path="tea" element={<Tea />} />
             <Route path="products" element={<Products />} />
             <Route path="recipes" element={<Recipes />} />
             <Route path="accessories" element={<Accessories />} />
@@ -44,7 +53,9 @@ export default function App() {
             <Route path="blog" element={<Blog />} />
             <Route path="account" element={<Account />} />
             <Route path="shopping-cart" element={<ShoppingCart />} />
+            <Route path="pairing-assistant" element={<PairingAssistant />} />
           </Routes>
+        </ScrollToTop>
       </Main>
       <FooterNav />
       <MyFooter />
