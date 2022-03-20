@@ -33,7 +33,6 @@ const FeaturedProductsGridContainer = styled.div`
   display: grid;
   margin-top: 1rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
   column-gap: 1rem;
   @media (max-width: 768px) {
     grid-template-columns: 1fr 1fr;
@@ -66,6 +65,5 @@ const Price = styled.p`
 
 const ItemImage = styled.img`
   width: 100%;
-  height: 100%;
   border-radius: .25rem;
 `;
