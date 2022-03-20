@@ -69,13 +69,13 @@ export default function MyNav() {
           onMouseEnter={ProductsHoverOn}
           onMouseLeave={ProductsHoverOff}
         >
-          <Anchor href="#">Cigars</Anchor>
-          <Anchor href="#">Alcohol</Anchor>
-          <Anchor href="#">Coffee</Anchor>
-          <Anchor href="#">Tea</Anchor>
-          <Anchor href="#">Recipes</Anchor>
-          <Anchor href="#">Accessories</Anchor>
-          <Anchor href="#">Pairing Sets</Anchor>
+          <DesktopLink to="/">Cigars</DesktopLink>
+          <DesktopLink to="/">Alcohol</DesktopLink>
+          <DesktopLink to="/">Coffee</DesktopLink>
+          <DesktopLink to="/">Tea</DesktopLink>
+          <DesktopLink to="/">Recipes</DesktopLink>
+          <DesktopLink to="/">Accessories</DesktopLink>
+          <DesktopLink to="/">Pairing Sets</DesktopLink>
         </ProductsDropDownContainer>
         <RecipesAnchor
           to="/recipes"
@@ -89,11 +89,11 @@ export default function MyNav() {
           onMouseEnter={RecipesHoverOn}
           onMouseLeave={RecipesHoverOff}
         >
-          <Anchor href="#">Breakfast</Anchor>
-          <Anchor href="#">Lunch</Anchor>
-          <Anchor href="#">Dinner</Anchor>
-          <Anchor href="#">Dessert</Anchor>
-          <Anchor href="#">Snack</Anchor>
+          <DesktopLink to="/">Breakfast</DesktopLink>
+          <DesktopLink to="/">Lunch</DesktopLink>
+          <DesktopLink to="/">Dinner</DesktopLink>
+          <DesktopLink to="/">Dessert</DesktopLink>
+          <DesktopLink to="/">Snack</DesktopLink>
         </RecipesDropDownContainer>
         <AccessoriesAnchor
           to="/accessories"
@@ -107,16 +107,16 @@ export default function MyNav() {
           onMouseEnter={AccessoriesHoverOn}
           onMouseLeave={AccessoriesHoverOff}
         >
-          <Anchor href="#">Cigar Cutters</Anchor>
-          <Anchor href="#">Cigar Ashtrays</Anchor>
-          <Anchor href="#">Cigar Lighters</Anchor>
-          <Anchor href="#">Cigar Humidors</Anchor>
-          <Anchor href="#">Wine Glasses</Anchor>
-          <Anchor href="#">Wine Decanters</Anchor>
-          <Anchor href="#">Wine Corkscrews & Openers</Anchor>
-          <Anchor href="#">Coffee Makers</Anchor>
-          <Anchor href="#">Coffee Mugs</Anchor>
-          <Anchor href="#">Cookware</Anchor>
+          <DesktopLink to="/">Cigar Cutters</DesktopLink>
+          <DesktopLink to="/">Cigar Ashtrays</DesktopLink>
+          <DesktopLink to="/">Cigar Lighters</DesktopLink>
+          <DesktopLink to="/">Cigar Humidors</DesktopLink>
+          <DesktopLink to="/">Wine Glasses</DesktopLink>
+          <DesktopLink to="/">Wine Decanters</DesktopLink>
+          <DesktopLink to="/">Wine Corkscrews & Openers</DesktopLink>
+          <DesktopLink to="/">Coffee Makers</DesktopLink>
+          <DesktopLink to="/">Coffee Mugs</DesktopLink>
+          <DesktopLink to="/">Cookware</DesktopLink>
         </AccessoriesDropDownContainer>
         <HistoryAnchor to="/history">History</HistoryAnchor>
         <BlogAnchor to="/blog">Blog</BlogAnchor>
@@ -160,27 +160,29 @@ export default function MyNav() {
         <CloseMenuAnchor onClick={MobileNavExit}>
           <FaTimes /> Close
         </CloseMenuAnchor>
-        <Anchor href="#" style={{ marginRight: "auto", marginTop: "-1rem" }}>
-          Home
-        </Anchor>
-        <Anchor href="#" style={{ marginRight: "auto" }}>
-          Products{" "}
-          <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
-        </Anchor>
-        <Anchor href="#" style={{ marginRight: "auto" }}>
-          Recipes{" "}
-          <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
-        </Anchor>
-        <Anchor href="#" style={{ marginRight: "auto" }}>
-          Accessories{" "}
-          <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
-        </Anchor>
-        <Anchor href="#" style={{ marginRight: "auto" }}>
-          History
-        </Anchor>
-        <Anchor href="#" style={{ marginRight: "auto" }}>
-          Blog
-        </Anchor>
+        <LinksContainer>
+          <MobileLink to="/" onClick={MobileNavExit}>Home</MobileLink>
+          <MobileLink to="/products" onClick={MobileNavExit}>
+            Products{" "}
+            <FaChevronDown
+              style={{ marginLeft: ".5rem", fontSize: ".75rem" }}
+            />
+          </MobileLink>
+          <MobileLink to="/recipes" onClick={MobileNavExit}>
+            Recipes{" "}
+            <FaChevronDown
+              style={{ marginLeft: ".5rem", fontSize: ".75rem" }}
+            />
+          </MobileLink>
+          <MobileLink to="/accessories" onClick={MobileNavExit}>
+            Accessories{" "}
+            <FaChevronDown
+              style={{ marginLeft: ".5rem", fontSize: ".75rem" }}
+            />
+          </MobileLink>
+          <MobileLink to="/history" onClick={MobileNavExit}>History</MobileLink>
+          <MobileLink to="/blog" onClick={MobileNavExit}>Blog</MobileLink>
+        </LinksContainer>
       </MobileNavMenu>
     </NavContainer>
   );
@@ -237,12 +239,33 @@ const AccessoriesDropDownContainer = styled.div`
   display: none;
 `;
 
-const Anchor = styled.a`
+const LinksContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  row-gap: 2rem;
+  align-items: flex-start;
+`;
+
+const DesktopLink = styled(Link)`
   display: flex;
   flex-direction: row;
   color: #151515;
   align-items: center;
   z-index: 10;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+`;
+
+const MobileLink = styled(Link)`
+  display: flex;
+  flex-direction: row;
+  color: #151515;
+  align-items: center;
+  z-index: 10;
+  text-decoration: underline;
   &:hover {
     text-decoration: none;
   }
