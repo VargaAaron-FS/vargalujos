@@ -27,19 +27,29 @@ export default function Home() {
   return (
     <AppContainer>
       <Grid>
-        <CigarsLink to="/cigars">
+        <GridLink to="/cigars">
           <CategoryCard categoryTitle="Cigars" bgImgUrl={CigarPhoto} />
-        </CigarsLink>
-        <CategoryCard categoryTitle="Alcohol" bgImgUrl={WinesPhoto} />
-        <CategoryCard categoryTitle="Coffee" bgImgUrl={CoffeePhoto} />
-        <CategoryCard categoryTitle="Tea" bgImgUrl={TeaPhoto} />
+        </GridLink>
+        <GridLink to="/alcohol">
+          <CategoryCard categoryTitle="Alcohol" bgImgUrl={WinesPhoto} />
+        </GridLink>
+        <GridLink to="/coffee">
+          <CategoryCard categoryTitle="Coffee" bgImgUrl={CoffeePhoto} />
+        </GridLink>
+        <GridLink to="/tea">
+          <CategoryCard categoryTitle="Tea" bgImgUrl={TeaPhoto} />
+        </GridLink>
       </Grid>
       <Grid2>
-        <CategoryCardLong categoryTitle="Recipes" bgImgUrl={RecipesPhoto} />
-        <CategoryCardLong
-          categoryTitle="Accessories"
-          bgImgUrl={AccessoriesPhoto}
-        />
+        <GridLink to="/recipes">
+          <CategoryCardLong categoryTitle="Recipes" bgImgUrl={RecipesPhoto} />
+        </GridLink>
+        <GridLink to="/accessories">
+          <CategoryCardLong
+            categoryTitle="Accessories"
+            bgImgUrl={AccessoriesPhoto}
+          />
+        </GridLink>
       </Grid2>
       <SectionTitle sectionTitle="Featured Cigars" />
       <FeaturedProductsGrid
@@ -168,6 +178,6 @@ const Grid2 = styled.div`
   }
 `;
 
-const CigarsLink = styled(Link)`
+const GridLink = styled(Link)`
   text-decoration: none;
 `;
