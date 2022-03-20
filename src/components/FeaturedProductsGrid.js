@@ -4,43 +4,53 @@ import styled from "styled-components";
 
 export default function FeaturedProductsGrid(props) {
   return (
-    <FeaturedProductsGridContainer>
-      <GridItem>
-        <ItemImage src={props.itemOneImgUrl} />
-        <ProductTitle>{props.productOneTitle}</ProductTitle>
-        <Price>{props.prodOnePrice}</Price>
-      </GridItem>
-      <GridItem>
-        <ItemImage src={props.itemTwoImgUrl} />
-        <ProductTitle>{props.productTwoTitle}</ProductTitle>
-        <Price>{props.prodTwoPrice}</Price>
-      </GridItem>
-      <GridItem>
-        <ItemImage src={props.itemThreeImgUrl} />
-        <ProductTitle>{props.productThreeTitle}</ProductTitle>
-        <Price>{props.prodThreePrice}</Price>
-      </GridItem>
-      <GridItem>
-        <ItemImage src={props.itemFourImgUrl} />
-        <ProductTitle>{props.productFourTitle}</ProductTitle>
-        <Price>{props.prodFourPrice}</Price>
-      </GridItem>
-    </FeaturedProductsGridContainer>
+    <FeaturedProductsContainer>
+      <FlexGroup>
+        <FlexItem>
+          <ItemImage src={props.itemOneImgUrl} />
+          <ProductTitle>{props.productOneTitle}</ProductTitle>
+          <Price>{props.prodOnePrice}</Price>
+        </FlexItem>
+        <FlexItem>
+          <ItemImage src={props.itemTwoImgUrl} />
+          <ProductTitle>{props.productTwoTitle}</ProductTitle>
+          <Price>{props.prodTwoPrice}</Price>
+        </FlexItem>
+      </FlexGroup>
+      <FlexGroup>
+        <FlexItem>
+          <ItemImage src={props.itemThreeImgUrl} />
+          <ProductTitle>{props.productThreeTitle}</ProductTitle>
+          <Price>{props.prodThreePrice}</Price>
+        </FlexItem>
+        <FlexItem>
+          <ItemImage src={props.itemFourImgUrl} />
+          <ProductTitle>{props.productFourTitle}</ProductTitle>
+          <Price>{props.prodFourPrice}</Price>
+        </FlexItem>
+      </FlexGroup>
+    </FeaturedProductsContainer>
   );
 }
 
-const FeaturedProductsGridContainer = styled.div`
-  display: grid;
+const FeaturedProductsContainer = styled.div`
+  display: flex;
+  flex-direction: row;
   margin-top: 1rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 1rem;
   @media (max-width: 768px) {
-    grid-template-columns: 1fr 1fr;
     row-gap: 1rem;
+    flex-direction: column;
   }
 `;
 
-const GridItem = styled.div`
+const FlexGroup = styled.div`
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+`;
+
+const FlexItem = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
