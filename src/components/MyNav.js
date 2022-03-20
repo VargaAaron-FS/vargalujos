@@ -160,27 +160,29 @@ export default function MyNav() {
         <CloseMenuAnchor onClick={MobileNavExit}>
           <FaTimes /> Close
         </CloseMenuAnchor>
-        <Anchor href="#" style={{ marginRight: "auto", marginTop: "-1rem" }}>
-          Home
-        </Anchor>
-        <Anchor href="#" style={{ marginRight: "auto" }}>
-          Products{" "}
-          <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
-        </Anchor>
-        <Anchor href="#" style={{ marginRight: "auto" }}>
-          Recipes{" "}
-          <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
-        </Anchor>
-        <Anchor href="#" style={{ marginRight: "auto" }}>
-          Accessories{" "}
-          <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
-        </Anchor>
-        <Anchor href="#" style={{ marginRight: "auto" }}>
-          History
-        </Anchor>
-        <Anchor href="#" style={{ marginRight: "auto" }}>
-          Blog
-        </Anchor>
+        <LinksContainer>
+          <Anchor href="#">Home</Anchor>
+          <Anchor href="#">
+            Products{" "}
+            <FaChevronDown
+              style={{ marginLeft: ".5rem", fontSize: ".75rem" }}
+            />
+          </Anchor>
+          <Anchor href="#">
+            Recipes{" "}
+            <FaChevronDown
+              style={{ marginLeft: ".5rem", fontSize: ".75rem" }}
+            />
+          </Anchor>
+          <Anchor href="#">
+            Accessories{" "}
+            <FaChevronDown
+              style={{ marginLeft: ".5rem", fontSize: ".75rem" }}
+            />
+          </Anchor>
+          <Anchor href="#">History</Anchor>
+          <Anchor href="#">Blog</Anchor>
+        </LinksContainer>
       </MobileNavMenu>
     </NavContainer>
   );
@@ -235,6 +237,14 @@ const AccessoriesDropDownContainer = styled.div`
   min-width: 113px;
   border-radius: 0 0 0.25rem 0.25rem;
   display: none;
+`;
+
+const LinksContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  row-gap: 2rem;
+  align-items: flex-start;
 `;
 
 const Anchor = styled.a`
