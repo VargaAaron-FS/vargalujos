@@ -27,9 +27,9 @@ export default function Home() {
   return (
     <AppContainer>
       <Grid>
-        <Link to="/cigars">
+        <CigarsLink to="/cigars">
           <CategoryCard categoryTitle="Cigars" bgImgUrl={CigarPhoto} />
-        </Link>
+        </CigarsLink>
         <CategoryCard categoryTitle="Alcohol" bgImgUrl={WinesPhoto} />
         <CategoryCard categoryTitle="Coffee" bgImgUrl={CoffeePhoto} />
         <CategoryCard categoryTitle="Tea" bgImgUrl={TeaPhoto} />
@@ -166,4 +166,8 @@ const Grid2 = styled.div`
   @media (min-width: 1024px) {
     grid-template-columns: 1fr 1fr;
   }
+`;
+
+const CigarsLink = styled(Link)`
+  text-decoration: none;
 `;
