@@ -26,7 +26,9 @@ import ShoppingCart from "./pages/ShoppingCart";
 import Alcohol from "./pages/Alcohol";
 import Coffee from "./pages/Coffee";
 import Tea from "./pages/Tea";
-import PairingAssistant from './pages/PairingAssistant';
+import PairingAssistant from "./pages/PairingAssistant";
+import CigarProduct from './pages/CigarProduct';
+import AlcoholProduct from './pages/AlcoholProduct';
 
 export default function App() {
   return (
@@ -54,6 +56,8 @@ export default function App() {
             <Route path="account" element={<Account />} />
             <Route path="shopping-cart" element={<ShoppingCart />} />
             <Route path="pairing-assistant" element={<PairingAssistant />} />
+            <Route path="cigar-product" element={<CigarProduct />} />
+            <Route path="alcohol-product" element={<AlcoholProduct />} />
           </Routes>
         </ScrollToTop>
       </Main>
