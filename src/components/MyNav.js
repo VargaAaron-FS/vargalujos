@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import {
@@ -56,77 +56,79 @@ export default function MyNav() {
   return (
     <NavContainer>
       <DesktopNav>
-        <HomeLink href="#">Home</HomeLink>
-        <ProductsLink
-          href="#"
+        <HomeAnchor to="/">
+          Home
+        </HomeAnchor>
+        <ProductsAnchor
+          to="/products"
           onMouseEnter={ProductsHoverOn}
           onMouseLeave={ProductsHoverOff}
         >
           Products{" "}
           <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
-        </ProductsLink>
+        </ProductsAnchor>
         <ProductsDropDownContainer
           onMouseEnter={ProductsHoverOn}
           onMouseLeave={ProductsHoverOff}
         >
-          <Link href="#">Cigars</Link>
-          <Link href="#">Alcohol</Link>
-          <Link href="#">Coffee</Link>
-          <Link href="#">Tea</Link>
-          <Link href="#">Recipes</Link>
-          <Link href="#">Accessories</Link>
-          <Link href="#">Pairing Sets</Link>
+          <Anchor href="#">Cigars</Anchor>
+          <Anchor href="#">Alcohol</Anchor>
+          <Anchor href="#">Coffee</Anchor>
+          <Anchor href="#">Tea</Anchor>
+          <Anchor href="#">Recipes</Anchor>
+          <Anchor href="#">Accessories</Anchor>
+          <Anchor href="#">Pairing Sets</Anchor>
         </ProductsDropDownContainer>
-        <RecipesLink
-          href="#"
+        <RecipesAnchor
+          to="/recipes"
           onMouseEnter={RecipesHoverOn}
           onMouseLeave={RecipesHoverOff}
         >
           Recipes{" "}
           <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
-        </RecipesLink>
+        </RecipesAnchor>
         <RecipesDropDownContainer
           onMouseEnter={RecipesHoverOn}
           onMouseLeave={RecipesHoverOff}
         >
-          <Link href="#">Breakfast</Link>
-          <Link href="#">Lunch</Link>
-          <Link href="#">Dinner</Link>
-          <Link href="#">Dessert</Link>
-          <Link href="#">Snack</Link>
+          <Anchor href="#">Breakfast</Anchor>
+          <Anchor href="#">Lunch</Anchor>
+          <Anchor href="#">Dinner</Anchor>
+          <Anchor href="#">Dessert</Anchor>
+          <Anchor href="#">Snack</Anchor>
         </RecipesDropDownContainer>
-        <AccessoriesLink
+        <AccessoriesAnchor
           href="#"
           onMouseEnter={AccessoriesHoverOn}
           onMouseLeave={AccessoriesHoverOff}
         >
           Accessories{" "}
           <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
-        </AccessoriesLink>
+        </AccessoriesAnchor>
         <AccessoriesDropDownContainer
           onMouseEnter={AccessoriesHoverOn}
           onMouseLeave={AccessoriesHoverOff}
         >
-          <Link href="#">Cigar Cutters</Link>
-          <Link href="#">Cigar Ashtrays</Link>
-          <Link href="#">Cigar Lighters</Link>
-          <Link href="#">Cigar Humidors</Link>
-          <Link href="#">Wine Glasses</Link>
-          <Link href="#">Wine Decanters</Link>
-          <Link href="#">Wine Corkscrews & Openers</Link>
-          <Link href="#">Coffee Makers</Link>
-          <Link href="#">Coffee Mugs</Link>
-          <Link href="#">Cookware</Link>
+          <Anchor href="#">Cigar Cutters</Anchor>
+          <Anchor href="#">Cigar Ashtrays</Anchor>
+          <Anchor href="#">Cigar Lighters</Anchor>
+          <Anchor href="#">Cigar Humidors</Anchor>
+          <Anchor href="#">Wine Glasses</Anchor>
+          <Anchor href="#">Wine Decanters</Anchor>
+          <Anchor href="#">Wine Corkscrews & Openers</Anchor>
+          <Anchor href="#">Coffee Makers</Anchor>
+          <Anchor href="#">Coffee Mugs</Anchor>
+          <Anchor href="#">Cookware</Anchor>
         </AccessoriesDropDownContainer>
-        <HistoryLink href="#">History</HistoryLink>
-        <BlogLink href="#">Blog</BlogLink>
+        <HistoryAnchor href="#">History</HistoryAnchor>
+        <BlogAnchor href="#">Blog</BlogAnchor>
         <span>&mdash;</span>
-        <UserLink href="#">
+        <UserAnchor href="#">
           <FaUserAlt />
-        </UserLink>
-        <ShoppingCartLink href="#">
+        </UserAnchor>
+        <ShoppingCartAnchor href="#">
           <FaShoppingCart />
-        </ShoppingCartLink>
+        </ShoppingCartAnchor>
       </DesktopNav>
       <MobileNav>
         <span
@@ -146,38 +148,41 @@ export default function MyNav() {
           <FaBars />
           Menu
         </MobileMenuButton>
-        <UserLink href="#" style={{ marginLeft: "auto", marginRight: "1rem" }}>
+        <UserAnchor
+          href="#"
+          style={{ marginLeft: "auto", marginRight: "1rem" }}
+        >
           <FaUserAlt />
-        </UserLink>
-        <ShoppingCartLink href="#">
+        </UserAnchor>
+        <ShoppingCartAnchor href="#">
           <FaShoppingCart />
-        </ShoppingCartLink>
+        </ShoppingCartAnchor>
       </MobileNav>
       <MobileNavMenu>
-        <CloseMenuLink onClick={MobileNavExit}>
+        <CloseMenuAnchor onClick={MobileNavExit}>
           <FaTimes /> Close
-        </CloseMenuLink>
-        <Link href="#" style={{ marginRight: "auto", marginTop: "-1rem" }}>
+        </CloseMenuAnchor>
+        <Anchor href="#" style={{ marginRight: "auto", marginTop: "-1rem" }}>
           Home
-        </Link>
-        <Link href="#" style={{ marginRight: "auto" }}>
+        </Anchor>
+        <Anchor href="#" style={{ marginRight: "auto" }}>
           Proucts{" "}
           <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
-        </Link>
-        <Link href="#" style={{ marginRight: "auto" }}>
+        </Anchor>
+        <Anchor href="#" style={{ marginRight: "auto" }}>
           Recipes{" "}
           <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
-        </Link>
-        <Link href="#" style={{ marginRight: "auto" }}>
+        </Anchor>
+        <Anchor href="#" style={{ marginRight: "auto" }}>
           Accessories{" "}
           <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
-        </Link>
-        <Link href="#" style={{ marginRight: "auto" }}>
+        </Anchor>
+        <Anchor href="#" style={{ marginRight: "auto" }}>
           History
-        </Link>
-        <Link href="#" style={{ marginRight: "auto" }}>
+        </Anchor>
+        <Anchor href="#" style={{ marginRight: "auto" }}>
           Blog
-        </Link>
+        </Anchor>
       </MobileNavMenu>
     </NavContainer>
   );
@@ -234,7 +239,7 @@ const AccessoriesDropDownContainer = styled.div`
   display: none;
 `;
 
-const Link = styled.a`
+const Anchor = styled.a`
   display: flex;
   flex-direction: row;
   color: #151515;
@@ -245,7 +250,20 @@ const Link = styled.a`
   }
 `;
 
-const HomeLink = styled.a`
+const HomeAnchor = styled(Link)`
+  display: flex;
+  flex-direction: row;
+  color: #151515;
+  align-items: center;
+  z-index: 10;
+  text-decoration: underline;
+  &:hover {
+    color: #000;
+    text-decoration: none;
+  }
+`;
+
+const ProductsAnchor = styled(Link)`
   display: flex;
   flex-direction: row;
   color: #151515;
@@ -256,7 +274,7 @@ const HomeLink = styled.a`
   }
 `;
 
-const ProductsLink = styled.a`
+const RecipesAnchor = styled(Link)`
   display: flex;
   flex-direction: row;
   color: #151515;
@@ -267,7 +285,7 @@ const ProductsLink = styled.a`
   }
 `;
 
-const RecipesLink = styled.a`
+const AccessoriesAnchor = styled.a`
   display: flex;
   flex-direction: row;
   color: #151515;
@@ -278,7 +296,7 @@ const RecipesLink = styled.a`
   }
 `;
 
-const AccessoriesLink = styled.a`
+const HistoryAnchor = styled.a`
   display: flex;
   flex-direction: row;
   color: #151515;
@@ -289,7 +307,7 @@ const AccessoriesLink = styled.a`
   }
 `;
 
-const HistoryLink = styled.a`
+const UserAnchor = styled.a`
   display: flex;
   flex-direction: row;
   color: #151515;
@@ -300,7 +318,7 @@ const HistoryLink = styled.a`
   }
 `;
 
-const UserLink = styled.a`
+const BlogAnchor = styled.a`
   display: flex;
   flex-direction: row;
   color: #151515;
@@ -311,18 +329,7 @@ const UserLink = styled.a`
   }
 `;
 
-const BlogLink = styled.a`
-  display: flex;
-  flex-direction: row;
-  color: #151515;
-  align-items: center;
-  z-index: 10;
-  &:hover {
-    text-decoration: none;
-  }
-`;
-
-const ShoppingCartLink = styled.a`
+const ShoppingCartAnchor = styled.a`
   display: flex;
   flex-direction: row;
   color: #151515;
@@ -394,7 +401,7 @@ const MobileNavMenu = styled.div`
   }
 `;
 
-const CloseMenuLink = styled.a`
+const CloseMenuAnchor = styled.a`
   display: flex;
   justify-content: flex-end;
   align-items: center;

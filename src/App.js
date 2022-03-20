@@ -15,6 +15,8 @@ import { Routes, Route } from "react-router-dom";
 // Pages
 import Home from './pages/Home';
 import Cigars from './pages/Cigars';
+import Products from './pages/Products';
+import Recipes from './pages/Recipes';
 
 export default function App() {
   return (
@@ -30,6 +32,8 @@ export default function App() {
       <Routes>
             <Route path="/" element={<Home />} />
             <Route path="cigars" element={<Cigars />} />
+            <Route path="products" element={<Products />} />
+            <Route path="recipes" element={<Recipes />} />
           </Routes>
       </Main>
       <FooterNav />
