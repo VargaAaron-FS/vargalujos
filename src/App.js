@@ -26,6 +26,7 @@ import ShoppingCart from "./pages/ShoppingCart";
 import Alcohol from "./pages/Alcohol";
 import Coffee from "./pages/Coffee";
 import Tea from "./pages/Tea";
+import PairingAssistant from './pages/PairingAssistant';
 
 export default function App() {
   return (
@@ -52,6 +53,7 @@ export default function App() {
             <Route path="blog" element={<Blog />} />
             <Route path="account" element={<Account />} />
             <Route path="shopping-cart" element={<ShoppingCart />} />
+            <Route path="pairing-assistant" element={<PairingAssistant />} />
           </Routes>
         </ScrollToTop>
       </Main>
