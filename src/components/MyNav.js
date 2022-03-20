@@ -56,9 +56,7 @@ export default function MyNav() {
   return (
     <NavContainer>
       <DesktopNav>
-        <HomeAnchor to="/">
-          Home
-        </HomeAnchor>
+        <HomeAnchor to="/">Home</HomeAnchor>
         <ProductsAnchor
           to="/products"
           onMouseEnter={ProductsHoverOn}
@@ -98,7 +96,7 @@ export default function MyNav() {
           <Anchor href="#">Snack</Anchor>
         </RecipesDropDownContainer>
         <AccessoriesAnchor
-          href="#"
+          to="/accessories"
           onMouseEnter={AccessoriesHoverOn}
           onMouseLeave={AccessoriesHoverOff}
         >
@@ -120,13 +118,13 @@ export default function MyNav() {
           <Anchor href="#">Coffee Mugs</Anchor>
           <Anchor href="#">Cookware</Anchor>
         </AccessoriesDropDownContainer>
-        <HistoryAnchor href="#">History</HistoryAnchor>
-        <BlogAnchor href="#">Blog</BlogAnchor>
+        <HistoryAnchor to="/history">History</HistoryAnchor>
+        <BlogAnchor to="/blog">Blog</BlogAnchor>
         <span>&mdash;</span>
-        <UserAnchor href="#">
+        <UserAnchor to="/account">
           <FaUserAlt />
         </UserAnchor>
-        <ShoppingCartAnchor href="#">
+        <ShoppingCartAnchor to="/shopping-cart">
           <FaShoppingCart />
         </ShoppingCartAnchor>
       </DesktopNav>
@@ -149,12 +147,12 @@ export default function MyNav() {
           Menu
         </MobileMenuButton>
         <UserAnchor
-          href="#"
+          to="/account"
           style={{ marginLeft: "auto", marginRight: "1rem" }}
         >
           <FaUserAlt />
         </UserAnchor>
-        <ShoppingCartAnchor href="#">
+        <ShoppingCartAnchor to="/shopping-cart">
           <FaShoppingCart />
         </ShoppingCartAnchor>
       </MobileNav>
@@ -166,7 +164,7 @@ export default function MyNav() {
           Home
         </Anchor>
         <Anchor href="#" style={{ marginRight: "auto" }}>
-          Proucts{" "}
+          Products{" "}
           <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
         </Anchor>
         <Anchor href="#" style={{ marginRight: "auto" }}>
@@ -285,7 +283,7 @@ const RecipesAnchor = styled(Link)`
   }
 `;
 
-const AccessoriesAnchor = styled.a`
+const AccessoriesAnchor = styled(Link)`
   display: flex;
   flex-direction: row;
   color: #151515;
@@ -296,7 +294,7 @@ const AccessoriesAnchor = styled.a`
   }
 `;
 
-const HistoryAnchor = styled.a`
+const HistoryAnchor = styled(Link)`
   display: flex;
   flex-direction: row;
   color: #151515;
@@ -307,7 +305,7 @@ const HistoryAnchor = styled.a`
   }
 `;
 
-const UserAnchor = styled.a`
+const UserAnchor = styled(Link)`
   display: flex;
   flex-direction: row;
   color: #151515;
@@ -318,7 +316,7 @@ const UserAnchor = styled.a`
   }
 `;
 
-const BlogAnchor = styled.a`
+const BlogAnchor = styled(Link)`
   display: flex;
   flex-direction: row;
   color: #151515;
@@ -329,7 +327,7 @@ const BlogAnchor = styled.a`
   }
 `;
 
-const ShoppingCartAnchor = styled.a`
+const ShoppingCartAnchor = styled(Link)`
   display: flex;
   flex-direction: row;
   color: #151515;
