@@ -49,7 +49,6 @@ const GridItem = styled.div`
   border: 1px solid #c4c4c4;
   border-radius: 0.25rem;
   cursor: pointer;
-  aspect-ratio: 1/1;
 `;
 
 const ProductTitle = styled.p`
@@ -68,6 +67,6 @@ const Price = styled.p`
 `;
 
 const ItemImage = styled.img`
-  width: 50%;
+  width: 100%;
   border-radius: 0.25rem;
 `;
