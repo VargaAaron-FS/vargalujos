@@ -119,12 +119,12 @@ export default function MyNav() {
           <Anchor href="#">Cookware</Anchor>
         </AccessoriesDropDownContainer>
         <HistoryAnchor to="/history">History</HistoryAnchor>
-        <BlogAnchor href="#">Blog</BlogAnchor>
+        <BlogAnchor to="/blog">Blog</BlogAnchor>
         <span>&mdash;</span>
-        <UserAnchor href="#">
+        <UserAnchor to="/account">
           <FaUserAlt />
         </UserAnchor>
-        <ShoppingCartAnchor href="#">
+        <ShoppingCartAnchor to="/shopping-cart">
           <FaShoppingCart />
         </ShoppingCartAnchor>
       </DesktopNav>
@@ -147,12 +147,12 @@ export default function MyNav() {
           Menu
         </MobileMenuButton>
         <UserAnchor
-          href="#"
+          to="/account"
           style={{ marginLeft: "auto", marginRight: "1rem" }}
         >
           <FaUserAlt />
         </UserAnchor>
-        <ShoppingCartAnchor href="#">
+        <ShoppingCartAnchor to="/shopping-cart">
           <FaShoppingCart />
         </ShoppingCartAnchor>
       </MobileNav>
@@ -164,7 +164,7 @@ export default function MyNav() {
           Home
         </Anchor>
         <Anchor href="#" style={{ marginRight: "auto" }}>
-          Proucts{" "}
+          Products{" "}
           <FaChevronDown style={{ marginLeft: ".5rem", fontSize: ".75rem" }} />
         </Anchor>
         <Anchor href="#" style={{ marginRight: "auto" }}>
@@ -305,7 +305,7 @@ const HistoryAnchor = styled(Link)`
   }
 `;
 
-const UserAnchor = styled.a`
+const UserAnchor = styled(Link)`
   display: flex;
   flex-direction: row;
   color: #151515;
@@ -316,7 +316,7 @@ const UserAnchor = styled.a`
   }
 `;
 
-const BlogAnchor = styled.a`
+const BlogAnchor = styled(Link)`
   display: flex;
   flex-direction: row;
   color: #151515;
@@ -327,7 +327,7 @@ const BlogAnchor = styled.a`
   }
 `;
 
-const ShoppingCartAnchor = styled.a`
+const ShoppingCartAnchor = styled(Link)`
   display: flex;
   flex-direction: row;
   color: #151515;

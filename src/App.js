@@ -19,6 +19,9 @@ import Products from './pages/Products';
 import Recipes from './pages/Recipes';
 import Accessories from './pages/Accessories';
 import History from './pages/History';
+import Blog from './pages/Blog';
+import Account from './pages/Account';
+import ShoppingCart from './pages/ShoppingCart';
 
 export default function App() {
   return (
@@ -38,6 +41,9 @@ export default function App() {
             <Route path="recipes" element={<Recipes />} />
             <Route path="accessories" element={<Accessories />} />
             <Route path="history" element={<History />} />
+            <Route path="blog" element={<Blog />} />
+            <Route path="account" element={<Account />} />
+            <Route path="shopping-cart" element={<ShoppingCart />} />
           </Routes>
       </Main>
       <FooterNav />
