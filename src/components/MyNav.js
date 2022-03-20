@@ -56,9 +56,7 @@ export default function MyNav() {
   return (
     <NavContainer>
       <DesktopNav>
-        <HomeAnchor to="/">
-          Home
-        </HomeAnchor>
+        <HomeAnchor to="/">Home</HomeAnchor>
         <ProductsAnchor
           to="/products"
           onMouseEnter={ProductsHoverOn}
@@ -98,7 +96,7 @@ export default function MyNav() {
           <Anchor href="#">Snack</Anchor>
         </RecipesDropDownContainer>
         <AccessoriesAnchor
-          href="#"
+          to="/accessories"
           onMouseEnter={AccessoriesHoverOn}
           onMouseLeave={AccessoriesHoverOff}
         >
@@ -120,7 +118,7 @@ export default function MyNav() {
           <Anchor href="#">Coffee Mugs</Anchor>
           <Anchor href="#">Cookware</Anchor>
         </AccessoriesDropDownContainer>
-        <HistoryAnchor href="#">History</HistoryAnchor>
+        <HistoryAnchor to="/history">History</HistoryAnchor>
         <BlogAnchor href="#">Blog</BlogAnchor>
         <span>&mdash;</span>
         <UserAnchor href="#">
@@ -285,7 +283,7 @@ const RecipesAnchor = styled(Link)`
   }
 `;
 
-const AccessoriesAnchor = styled.a`
+const AccessoriesAnchor = styled(Link)`
   display: flex;
   flex-direction: row;
   color: #151515;
@@ -296,7 +294,7 @@ const AccessoriesAnchor = styled.a`
   }
 `;
 
-const HistoryAnchor = styled.a`
+const HistoryAnchor = styled(Link)`
   display: flex;
   flex-direction: row;
   color: #151515;
