@@ -144,7 +144,6 @@ export default function Home() {
 const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 1rem;
   overflow-x: hidden;
 `;
 
